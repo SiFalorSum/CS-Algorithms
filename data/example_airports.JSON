@@ -1,0 +1,582 @@
+[
+    {
+        "airport": "Tirana Airport",
+        "country": "Albania",
+        "iataAirportCode": "TIA",
+        "timezone": 1,
+        "altitudeFeet": 126,
+        "altitudeMeter": 39,
+        "latitude": 41.414722222222224,
+        "longitude": 19.720555555555553
+    },
+    {
+        "airport": "Yerevan Zvartnots Airport",
+        "country": "Armenia",
+        "iataAirportCode": "EVN",
+        "timezone": 4,
+        "altitudeFeet": 2838,
+        "altitudeMeter": 866,
+        "latitude": 40.14833333333333,
+        "longitude": 44.39666666666667
+    },
+    {
+        "airport": "Vienna Airport",
+        "country": "Austria",
+        "iataAirportCode": "VIE",
+        "timezone": 1,
+        "altitudeFeet": 600,
+        "altitudeMeter": 183,
+        "latitude": 48.11027777777778,
+        "longitude": 16.56972222222222
+    },
+    {
+        "airport": "Baku Airport",
+        "country": "Azerbaijan",
+        "iataAirportCode": "GYD",
+        "timezone": 4,
+        "altitudeFeet": 10,
+        "altitudeMeter": 3,
+        "latitude": 40.4674987792968,
+        "longitude": 50.0466995239257
+    },
+    {
+        "airport": "Minsk Airport",
+        "country": "Belarus",
+        "iataAirportCode": "MSQ",
+        "timezone": 3,
+        "altitudeFeet": 670,
+        "altitudeMeter": 204,
+        "latitude": 53.882222222222225,
+        "longitude": 28.030555555555555
+    },
+    {
+        "airport": "Brussels Airport",
+        "country": "Belgium",
+        "iataAirportCode": "BRU",
+        "timezone": 1,
+        "altitudeFeet": 184,
+        "altitudeMeter": 57,
+        "latitude": 50.90222222222222,
+        "longitude": 4.498611111111111
+    },
+    {
+        "airport": "Sarajevo Airport",
+        "country": "Bosnia and Herzegovina",
+        "iataAirportCode": "SJJ",
+        "timezone": 1,
+        "altitudeFeet": 1708,
+        "altitudeMeter": 521,
+        "latitude": 43.824444444444445,
+        "longitude": 18.33138888888889
+    },
+    {
+        "airport": "Sofia Airport",
+        "country": "Bulgaria",
+        "iataAirportCode": "SOF",
+        "timezone": 2,
+        "altitudeFeet": 1742,
+        "altitudeMeter": 531,
+        "latitude": 42.69499999999999,
+        "longitude": 23.40611111111111
+    },
+    {
+        "airport": "Zagreb Airport",
+        "country": "Croatia",
+        "iataAirportCode": "ZAG",
+        "timezone": 1,
+        "altitudeFeet": 353,
+        "altitudeMeter": 107,
+        "latitude": 45.74277777777778,
+        "longitude": 16.06861111111111
+    },
+    {
+        "airport": "Larnaca Airport",
+        "country": "Cyprus",
+        "iataAirportCode": "LCA",
+        "timezone": 2,
+        "altitudeFeet": 8,
+        "altitudeMeter": 3,
+        "latitude": 34.875,
+        "longitude": 33.624722222222225
+    },
+    {
+        "airport": "Prague Airport",
+        "country": "Czech Republic",
+        "iataAirportCode": "PRG",
+        "timezone": 1,
+        "altitudeFeet": 1247,
+        "altitudeMeter": 381,
+        "latitude": 50.100833333333334,
+        "longitude": 14.26
+    },
+    {
+        "airport": "Copenhagen Airport",
+        "country": "Denmark",
+        "iataAirportCode": "CPH",
+        "timezone": 1,
+        "altitudeFeet": 17,
+        "altitudeMeter": 6,
+        "latitude": 55.617777777777775,
+        "longitude": 12.655833333333334
+    },
+    {
+        "airport": "Tallinn Airport",
+        "country": "Estonia",
+        "iataAirportCode": "TLL",
+        "timezone": 2,
+        "altitudeFeet": 131,
+        "altitudeMeter": 41,
+        "latitude": 59.41305555555555,
+        "longitude": 24.83277777777778
+    },
+    {
+        "airport": "Helsinki Airport",
+        "country": "Finland",
+        "iataAirportCode": "HEL",
+        "timezone": 2,
+        "altitudeFeet": 179,
+        "altitudeMeter": 55,
+        "latitude": 60.32,
+        "longitude": 24.95611111111111
+    },
+    {
+        "airport": "Marseille Airport",
+        "country": "France",
+        "iataAirportCode": "MRS",
+        "timezone": 1,
+        "altitudeFeet": 74,
+        "altitudeMeter": 23,
+        "latitude": 43.43555555555555,
+        "longitude": 5.213611111111112
+    },
+    {
+        "airport": "Paris Charles de Gaulle Airport",
+        "country": "France",
+        "iataAirportCode": "CDG",
+        "timezone": 1,
+        "altitudeFeet": 392,
+        "altitudeMeter": 120,
+        "latitude": 49.01277777777778,
+        "longitude": 2.55
+    },
+    {
+        "airport": "Nantes Airport",
+        "country": "France",
+        "iataAirportCode": "NTE",
+        "timezone": 1,
+        "altitudeFeet": 90,
+        "altitudeMeter": 28,
+        "latitude": 47.153055555555554,
+        "longitude": -1.6105555555555557
+    },
+    {
+        "airport": "Tbilisi Airport",
+        "country": "Georgia",
+        "iataAirportCode": "TBS",
+        "timezone": 4,
+        "altitudeFeet": 1624,
+        "altitudeMeter": 495,
+        "latitude": 41.66916666666666,
+        "longitude": 44.95472222222222
+    },
+    {
+        "airport": "Munich Airport",
+        "country": "Germany",
+        "iataAirportCode": "MUC",
+        "timezone": 1,
+        "altitudeFeet": 1487,
+        "altitudeMeter": 454,
+        "latitude": 48.353611111111114,
+        "longitude": 11.785833333333333
+    },
+    {
+        "airport": "Frankfurt Airport",
+        "country": "Germany",
+        "iataAirportCode": "FRA",
+        "timezone": 1,
+        "altitudeFeet": 364,
+        "altitudeMeter": 111,
+        "latitude": 50.02638888888889,
+        "longitude": 8.543055555555556
+    },
+    {
+        "airport": "Berlin Tegel Airport",
+        "country": "Germany",
+        "iataAirportCode": "TXL",
+        "timezone": 1,
+        "altitudeFeet": 122,
+        "altitudeMeter": 38,
+        "latitude": 52.559444444444445,
+        "longitude": 13.2875
+    },
+    {
+        "airport": "Athens Airport",
+        "country": "Greece",
+        "iataAirportCode": "ATH",
+        "timezone": 2,
+        "altitudeFeet": 308,
+        "altitudeMeter": 94,
+        "latitude": 37.9364013672,
+        "longitude": 23.9444999695
+    },
+    {
+        "airport": "Budapest Airport",
+        "country": "Hungary",
+        "iataAirportCode": "BUD",
+        "timezone": 1,
+        "altitudeFeet": 495,
+        "altitudeMeter": 151,
+        "latitude": 47.43666666666666,
+        "longitude": 19.255555555555556
+    },
+    {
+        "airport": "Keflavik Airport",
+        "country": "Iceland",
+        "iataAirportCode": "KEF",
+        "timezone": 0,
+        "altitudeFeet": 171,
+        "altitudeMeter": 53,
+        "latitude": 63.985,
+        "longitude": -22.605555555555558
+    },
+    {
+        "airport": "Dublin Airport",
+        "country": "Ireland",
+        "iataAirportCode": "DUB",
+        "timezone": 0,
+        "altitudeFeet": 242,
+        "altitudeMeter": 74,
+        "latitude": 53.42111111111111,
+        "longitude": -6.27
+    },
+    {
+        "airport": "Rome Fiumicino Airport",
+        "country": "Italy",
+        "iataAirportCode": "FCO",
+        "timezone": 1,
+        "altitudeFeet": 13,
+        "altitudeMeter": 4,
+        "latitude": 41.812777777777775,
+        "longitude": 12.253055555555555
+    },
+    {
+        "airport": "Milan Malpensa Airport",
+        "country": "Italy",
+        "iataAirportCode": "MXP",
+        "timezone": 1,
+        "altitudeFeet": 768,
+        "altitudeMeter": 234,
+        "latitude": 45.63138888888889,
+        "longitude": 8.727777777777778
+    },
+    {
+        "airport": "Almaty Airport",
+        "country": "Kazakhstan",
+        "iataAirportCode": "ALA",
+        "timezone": 6,
+        "altitudeFeet": 2234,
+        "altitudeMeter": 681,
+        "latitude": 43.35194444444445,
+        "longitude": 77.04027777777777
+    },
+    {
+        "airport": "Pristina Airport",
+        "country": "Kosovo",
+        "iataAirportCode": "PRN",
+        "timezone": 1,
+        "altitudeFeet": 1789,
+        "altitudeMeter": 546,
+        "latitude": 42.57277777777778,
+        "longitude": 21.035833333333336
+    },
+    {
+        "airport": "Riga Airport",
+        "country": "Latvia",
+        "iataAirportCode": "RIX",
+        "timezone": 2,
+        "altitudeFeet": 36,
+        "altitudeMeter": 11,
+        "latitude": 56.923599243164,
+        "longitude": 23.9710998535156
+    },
+    {
+        "airport": "Kaunas Airport",
+        "country": "Lithuania",
+        "iataAirportCode": "KUN",
+        "timezone": 2,
+        "altitudeFeet": 256,
+        "altitudeMeter": 78,
+        "latitude": 54.9639015197753,
+        "longitude": 24.0848007202148
+    },
+    {
+        "airport": "Luxembourg Airport",
+        "country": "Luxembourg",
+        "iataAirportCode": "LUX",
+        "timezone": 1,
+        "altitudeFeet": 1234,
+        "altitudeMeter": 377,
+        "latitude": 49.62638888888889,
+        "longitude": 6.211388888888889
+    },
+    {
+        "airport": "Malta Airport",
+        "country": "Malta",
+        "iataAirportCode": "MLA",
+        "timezone": 1,
+        "altitudeFeet": 300,
+        "altitudeMeter": 92,
+        "latitude": 35.85722222222223,
+        "longitude": 14.477500000000001
+    },
+    {
+        "airport": "Chisinau Airport",
+        "country": "Moldova",
+        "iataAirportCode": "KIV",
+        "timezone": 2,
+        "altitudeFeet": 399,
+        "altitudeMeter": 122,
+        "latitude": 46.92777777777778,
+        "longitude": 28.93138888888889
+    },
+    {
+        "airport": "Amsterdam Airport Schiphol",
+        "country": "Netherlands",
+        "iataAirportCode": "AMS",
+        "timezone": 1,
+        "altitudeFeet": -11,
+        "altitudeMeter": -3,
+        "latitude": 52.308611111111105,
+        "longitude": 4.763888888888889
+    },
+    {
+        "airport": "Skopje Airport",
+        "country": "North Macedonia",
+        "iataAirportCode": "SKP",
+        "timezone": 1,
+        "altitudeFeet": 781,
+        "altitudeMeter": 239,
+        "latitude": 41.96138888888889,
+        "longitude": 21.62138888888889
+    },
+    {
+        "airport": "Oslo Airport",
+        "country": "Norway",
+        "iataAirportCode": "OSL",
+        "timezone": 1,
+        "altitudeFeet": 681,
+        "altitudeMeter": 208,
+        "latitude": 60.193888888888885,
+        "longitude": 11.100277777777777
+    },
+    {
+        "airport": "Warsaw Airport",
+        "country": "Poland",
+        "iataAirportCode": "WAW",
+        "timezone": 1,
+        "altitudeFeet": 362,
+        "altitudeMeter": 111,
+        "latitude": 52.16555555555556,
+        "longitude": 20.966944444444444
+    },
+    {
+        "airport": "Lisbon Airport",
+        "country": "Portugal",
+        "iataAirportCode": "LIS",
+        "timezone": 0,
+        "altitudeFeet": 374,
+        "altitudeMeter": 114,
+        "latitude": 38.78111111111111,
+        "longitude": -9.135833333333332
+    },
+    {
+        "airport": "Bucharest Henri Coanda Airport",
+        "country": "Romania",
+        "iataAirportCode": "OTP",
+        "timezone": 2,
+        "altitudeFeet": 314,
+        "altitudeMeter": 96,
+        "latitude": 44.57361111111111,
+        "longitude": 26.103333333333335
+    },
+    {
+        "airport": "Novosibirsk Tolmachevo Airport",
+        "country": "Russia",
+        "iataAirportCode": "OVB",
+        "timezone": 7,
+        "altitudeFeet": 365,
+        "altitudeMeter": 111,
+        "latitude": 55.012599945068,
+        "longitude": 82.650703430176
+    },
+    {
+        "airport": "Moscow Sheremetyevo Airport",
+        "country": "Russia",
+        "iataAirportCode": "SVO",
+        "timezone": 3,
+        "altitudeFeet": 622,
+        "altitudeMeter": 193,
+        "latitude": 55.97166666666667,
+        "longitude": 37.415
+    },
+    {
+        "airport": "Saint Petersburg Pulkovo Airport",
+        "country": "Russia",
+        "iataAirportCode": "LED",
+        "timezone": 3,
+        "altitudeFeet": 78,
+        "altitudeMeter": 25,
+        "latitude": 59.8,
+        "longitude": 30.265
+    },
+    {
+        "airport": "Belgrade Nikola Tesla Airport",
+        "country": "Serbia",
+        "iataAirportCode": "BEG",
+        "timezone": 1,
+        "altitudeFeet": 335,
+        "altitudeMeter": 103,
+        "latitude": 44.818333333333335,
+        "longitude": 20.30888888888889
+    },
+    {
+        "airport": "Bratislava Airport",
+        "country": "Slovakia",
+        "iataAirportCode": "BTS",
+        "timezone": 1,
+        "altitudeFeet": 436,
+        "altitudeMeter": 133,
+        "latitude": 48.169999999999995,
+        "longitude": 17.2125
+    },
+    {
+        "airport": "Ljubljana Airport",
+        "country": "Slovenia",
+        "iataAirportCode": "LJU",
+        "timezone": 1,
+        "altitudeFeet": 1273,
+        "altitudeMeter": 389,
+        "latitude": 46.22361111111111,
+        "longitude": 14.4575
+    },
+    {
+        "airport": "La Palma Airport",
+        "country": "Spain",
+        "iataAirportCode": "SPC",
+        "timezone": 0,
+        "altitudeFeet": 107,
+        "altitudeMeter": 33,
+        "latitude": 28.62638888888889,
+        "longitude": -17.755555555555556
+    },
+    {
+        "airport": "Madrid Barajas Airport",
+        "country": "Spain",
+        "iataAirportCode": "MAD",
+        "timezone": 1,
+        "altitudeFeet": 1998,
+        "altitudeMeter": 610,
+        "latitude": 40.47222222222222,
+        "longitude": -3.560833333333333
+    },
+    {
+        "airport": "Barcelona Airport",
+        "country": "Spain",
+        "iataAirportCode": "BCN",
+        "timezone": 1,
+        "altitudeFeet": 12,
+        "altitudeMeter": 4,
+        "latitude": 41.29694444444444,
+        "longitude": 2.0783333333333336
+    },
+    {
+        "airport": "Stockholm Arlanda Airport",
+        "country": "Sweden",
+        "iataAirportCode": "ARN",
+        "timezone": 1,
+        "altitudeFeet": 137,
+        "altitudeMeter": 38,
+        "latitude": 59.651944444444446,
+        "longitude": 17.91861111111111
+    },
+    {
+        "airport": "Geneva Airport",
+        "country": "Switzerland",
+        "iataAirportCode": "GVA",
+        "timezone": 1,
+        "altitudeFeet": 1411,
+        "altitudeMeter": 431,
+        "latitude": 46.238055555555555,
+        "longitude": 6.108888888888888
+    },
+    {
+        "airport": "Zurich Airport",
+        "country": "Switzerland",
+        "iataAirportCode": "ZRH",
+        "timezone": 1,
+        "altitudeFeet": 1416,
+        "altitudeMeter": 432,
+        "latitude": 47.46472222222223,
+        "longitude": 8.549166666666666
+    },
+    {
+        "airport": "Istanbul New Airport",
+        "country": "Turkey",
+        "iataAirportCode": "IST",
+        "timezone": 3,
+        "altitudeFeet": 164,
+        "altitudeMeter": 50,
+        "latitude": 40.97666666666667,
+        "longitude": 28.82111111111111
+    },
+    {
+        "airport": "Antalya Airport",
+        "country": "Turkey",
+        "iataAirportCode": "AYT",
+        "timezone": 3,
+        "altitudeFeet": 177,
+        "altitudeMeter": 54,
+        "latitude": 36.90138888888889,
+        "longitude": 30.791666666666668
+    },
+    {
+        "airport": "Kiev Zhuliany Airport",
+        "country": "Ukraine",
+        "iataAirportCode": "IEV",
+        "timezone": 2,
+        "altitudeFeet": 587,
+        "altitudeMeter": 179,
+        "latitude": 50.401666666666664,
+        "longitude": 30.451666666666664
+    },
+    {
+        "airport": "London Heathrow Airport",
+        "country": "United Kingdom",
+        "iataAirportCode": "LHR",
+        "timezone": 0,
+        "altitudeFeet": 83,
+        "altitudeMeter": 25,
+        "latitude": 51.4775,
+        "longitude": -0.4613888888888889
+    },
+    {
+        "airport": "Manchester Airport",
+        "country": "United Kingdom",
+        "iataAirportCode": "MAN",
+        "timezone": 0,
+        "altitudeFeet": 257,
+        "altitudeMeter": 79,
+        "latitude": 53.353611111111114,
+        "longitude": -2.274722222222222
+    },
+    {
+        "airport": "Edinburgh Airport",
+        "country": "United Kingdom",
+        "iataAirportCode": "EDI",
+        "timezone": 0,
+        "altitudeFeet": 135,
+        "altitudeMeter": 42,
+        "latitude": 55.95,
+        "longitude": -3.3725
+    }
+]

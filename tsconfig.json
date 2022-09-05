@@ -1,0 +1,8 @@
+{
+    "extends" : "./node_modules/@tsconfig/recommended/tsconfig",
+    "compilerOptions": {
+        "outDir": "out"
+    },
+    "include" : ["src/**/*", "test/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}

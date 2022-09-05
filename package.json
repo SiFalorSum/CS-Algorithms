@@ -1,0 +1,27 @@
+{
+  "name": "cs-algorithms",
+  "version": "0.0.1",
+  "description": "Various sorting and graph algorithms.",
+  "main": "",
+  "scripts": {
+    "prepare": "tsc",
+    "build": "tsc",
+    "postbuild": "jest",
+    "test": "jest",
+    "demo": "cd ./out && node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiFalorSum/CS-Algorithms.git"
+  },
+  "author": "Nils Hansander",
+  "license": "ISC",
+  "homepage": "https://github.com/SiFalorSum/CS-Algorithms#readme",
+  "dependencies": {
+    "@tsconfig/recommended": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.2"
+  },
+  "private": true
+}
