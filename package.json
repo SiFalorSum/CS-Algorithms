@@ -1,6 +1,6 @@
 {
   "name": "cs-algorithms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Various sorting and graph algorithms.",
   "main": "",
   "scripts": {

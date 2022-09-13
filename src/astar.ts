@@ -1,5 +1,5 @@
-import { Graph } from './weightedGraph';
-import { Node } from './airport';
+import { Graph } from './graph';
+import { Node } from './graph';
 
 export class Astar<T extends Node> {
     graph: Graph<T>;

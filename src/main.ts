@@ -1,4 +1,4 @@
-import { Graph } from './weightedGraph';
+import { Graph } from './graph';
 import { Airport } from './airport';
 import { Astar } from './astar';
 import * as fs from 'node:fs';
