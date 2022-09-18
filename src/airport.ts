@@ -1,8 +1,9 @@
 import { GeoLocation } from "./geolocation";
 import { Node } from "./graph";
+import type { Graph } from "./graph";
 
-/* *
- * Example class implementing the {@link Node} interface to be used in a {@link undirectedGraph.Graph|graph}. FIXME!
+/**
+ * Example class implementing the {@link Node} interface to be used in a {@link Graph|graph}.
  * @constructor
  * @param {string} name - The full name of the airport, with initial capital letter.
  * @param {string} country - The country name, with initial capital letter.

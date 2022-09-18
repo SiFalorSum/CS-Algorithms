@@ -1,5 +1,3 @@
-/** @module undirectedGraph */
-
 /**
  * An interface for objects that are nodes in a {@link Graph|graph}.
  * @interface
@@ -43,17 +41,20 @@ export class Graph<T extends Node> {
         return this.nodeList.has(nodeId);
     }
 
+    /**
+     * @throws Will throw an error if no node with the given identifier can be found.
+     */
     get(nodeId: string): T {
-        if ( !this.nodeList.has(nodeId) ) {
-            throw new Error(`No node with id ${nodeId} in graph!`);
-        }
-        else {
-            return this.nodeList.get(nodeId)!;
-        }
+        this.checkIfInGraph(nodeId);
+        return this.nodeList.get(nodeId)!;
     }
 
+    /**
+     * @throws Will throw an error if no node with the given identifier can be found.
+     */
     getNeighbors(nodeId: string): Set<string> {
-        return this.adjacencyList.get(nodeId) ?? new Set<string>();
+        this.checkIfInGraph(nodeId);
+        return this.adjacencyList.get(nodeId)!;
     }
 
     addNodes(nodes: Iterable<T>) {
@@ -84,8 +85,10 @@ export class Graph<T extends Node> {
     }
 
     addEdge(nodeId1: string, nodeId2: string) {
+        this.checkIfInGraph(nodeId1);
+        this.checkIfInGraph(nodeId2);
         if ( nodeId1 === nodeId2 ) throw new Error(`Loop edge from node ${nodeId1} to itself not allowed by graph definition.`);
-        if ( !this.adjacencyList.has(nodeId1) || !this.adjacencyList.has(nodeId2) ) return;
+
         this.adjacencyList.get(nodeId1)!.add(nodeId2);
         this.adjacencyList.get(nodeId2)!.add(nodeId1);
     }
@@ -96,36 +99,8 @@ export class Graph<T extends Node> {
         this.adjacencyList.get(nodeId2)!.delete(nodeId1);
     }
 
-    bfs(start: string, target: string): string[] {
-        const visited = new Set([start]);
-        const parent = new Map([[start, ""]]);
-        const queue = [start];
-        while ( queue.length > 0 ) {
-            let nodeId = queue.shift() ?? "";
-            this.adjacencyList.get(nodeId)?.forEach(c => {
-                if ( !visited.has(c) ) {
-                    visited.add(c);
-                    queue.push(c);
-                    parent.set(c, nodeId);
-                    if ( c === target ) {
-                        const path = [c];
-                        while ( !!parent.get(path[0]) ) {
-                            path.unshift(parent.get(path[0])!);
-                        }
-                        return path;
-                    }
-                }
-            });
-        }
-        return [];
+    private checkIfInGraph(nodeId: string) {
+        if ( !this.nodeList.has(nodeId) ) throw new Error(`No node with id ${nodeId} in graph!`);
     }
 
-    dfs(start: string, target: string, visited = new Set<string>()): string[] {
-        if ( visited.has(start) ) return [];
-        if ( start === target ) return [target];
-    
-        visited.add(start);
-        let path = [...(this.adjacencyList.get(start) ?? [])].map(node => this.dfs(node, target, visited)).find(arr => !!arr.length);
-        return path ? [start].concat(path) : [];
-    }
 }

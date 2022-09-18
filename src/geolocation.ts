@@ -5,7 +5,7 @@ export interface Angle {
 }
 
 /**
- * Demo class holding a coordinate pair in degrees and their coresponding sine and cosine values,
+ * Example class holding a coordinate pair in degrees and their coresponding sine and cosine values,
  * as well as a function for approximate distance to another GeoLocation object.
  * @constructor
  * @param {number} lat - Latitude in decimal degrees.
@@ -35,8 +35,8 @@ export class GeoLocation {
     /**
      * Calculates the approximate distance from this GeoLocation to another, assuming a spherical earth.
      * @method
-     * @param {GeoLocation} loc 
-     * @returns distance in km. Assume an error margin of 1%
+     * @param {GeoLocation} loc
+     * @returns Returns the distance in km. Assume an error margin of 1%.
      */
     distance(loc: GeoLocation): number {
         let x2 = (this.lat.cos*this.long.cos - loc.lat.cos*loc.long.cos) ** 2;

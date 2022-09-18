@@ -1,5 +1,4 @@
-import { Graph } from './graph';
-import { Node } from './graph';
+import { Graph, Node } from './graph';
 
 export class Astar<T extends Node> {
     graph: Graph<T>;
