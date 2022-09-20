@@ -1,10 +1,10 @@
-import { Graph } from './graph';
+import { Graph } from '../graph_traversal/graph';
 import { Airport } from './airport';
-import { Astar } from './astar';
+import { Astar } from '../graph_traversal/astar';
 import * as fs from 'node:fs';
 
-const AIRPORTS_PATH = '../data/example_airports.JSON';
-const ROUTES_PATH = '../data/example_routes.JSON';
+const AIRPORTS_PATH = '../../../data/example_airports.JSON';
+const ROUTES_PATH = '../../../data/example_routes.JSON';
 
 interface AirportData {
     airport: string,
@@ -44,8 +44,7 @@ async function initGraph(): Promise<Graph<Airport>> {
         try {
             const airports = parseAirportData(await loadFile(AIRPORTS_PATH));
             const routes = parseRouteData(await loadFile(ROUTES_PATH));
-            const graph = new Graph<Airport>(airports);
-            routes.forEach(route => graph.addEdge(...route));
+            const graph = new Graph<Airport>(airports, routes);
             resolve(graph);
         }
         catch (err) {
@@ -54,7 +53,7 @@ async function initGraph(): Promise<Graph<Airport>> {
     });
 }
 
-async function main() {
+async function aStarDemo() {
     try {
         const astar = new Astar(await initGraph());
         console.log(astar.findPath("MAN", "FCO"));
@@ -64,4 +63,4 @@ async function main() {
     }
 }
 
-main();
+aStarDemo();

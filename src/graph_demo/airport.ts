@@ -1,6 +1,6 @@
 import { GeoLocation } from "./geolocation";
-import { Node } from "./graph";
-import type { Graph } from "./graph";
+import { Node } from "../graph_traversal/graph";
+import type { Graph } from "../graph_traversal/graph";
 
 /**
  * Example class implementing the {@link Node} interface to be used in a {@link Graph|graph}.
@@ -18,14 +18,14 @@ export class Airport extends GeoLocation implements Node {
     country: string;
     code: string;
 
-    private nameRegex = /^[A-Z]\w+(\s\w+)*$/;
-    private codeRegex = /^[A-Z]{3}$/;
+    static #nameRegex = /^[A-Z]\w+(\s\w+)*$/;
+    static #codeRegex = /^[A-Z]{3}$/;
 
     constructor(name: string, country: string, code: string, lat: number, long: number) {
         super(lat, long);
-        if ( !this.nameRegex.test(name) ) throw new Error(`Invalid format of Airport name: ${name}`);
-        if ( !this.nameRegex.test(country) ) throw new Error(`Invalid format of Airport country: ${country}`);
-        if ( !this.codeRegex.test(code) ) throw new Error(`Invalid format of Airport code: ${code}`);
+        if ( !Airport.#nameRegex.test(name) ) throw new Error(`Invalid format of Airport name: ${name}`);
+        if ( !Airport.#nameRegex.test(country) ) throw new Error(`Invalid format of Airport country: ${country}`);
+        if ( !Airport.#codeRegex.test(code) ) throw new Error(`Invalid format of Airport code: ${code}`);
         this.name = name;
         this.country = country;
         this.code = code;

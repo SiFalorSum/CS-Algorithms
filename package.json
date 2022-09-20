@@ -1,6 +1,6 @@
 {
   "name": "cs-algorithms",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Various sorting and graph algorithms.",
   "main": "",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "tsc",
     "postbuild": "jest",
     "test": "jest",
-    "demo": "cd ./out && node main.js"
+    "demo": "cd ./out/src/graph_demo && node graphdemo.js"
   },
   "repository": {
     "type": "git",

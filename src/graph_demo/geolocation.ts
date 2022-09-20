@@ -16,7 +16,7 @@ export class GeoLocation {
     long: Angle;
 
     // Earth's arithmetic mean radius in km as defined in WGS84.
-    private EARTH_RADIUS = 6371.0088;
+    static #EARTH_RADIUS = 6371.0088;
 
     constructor(lat: number, long: number) {
         this.checkCoord(lat, long);
@@ -42,7 +42,7 @@ export class GeoLocation {
         let x2 = (this.lat.cos*this.long.cos - loc.lat.cos*loc.long.cos) ** 2;
         let y2 = (this.lat.cos*this.long.sin - loc.lat.cos*loc.long.sin) ** 2;
         let z2 = (this.lat.sin - loc.lat.sin) ** 2;
-        return 2 * this.EARTH_RADIUS * Math.asin( Math.sqrt(x2 + y2 + z2) / 2 );
+        return 2 * GeoLocation.#EARTH_RADIUS * Math.asin( Math.sqrt(x2 + y2 + z2) / 2 );
     }
 
     // Converts degrees to radians.
