@@ -1,5 +1,10 @@
 import { Graph, Node } from './graph';
 
+/**
+ * Implementation of the A* search algorithm for a weighted {@link Graph|graph}.
+ * @constructor
+ * @param {Graph<T>} graph
+ */
 export class Astar<T extends Node> {
     graph: Graph<T>;
     private open = new Set<string>();
@@ -12,6 +17,12 @@ export class Astar<T extends Node> {
         this.graph = graph;
     }
 
+    /**
+     * A* search through a {@link Graph|graph} for given start and target {@link Node|nodes}.
+     * @param {string} start - Identifier for the start node.
+     * @param {string} target - Identifier for the target node.
+     * @returns Returns an array of the nodes in the shortest found path, or an empty array if no path is possible.
+     */
     findPath(start: string, target: string): T[] {
         if ( !this.graph.has(start) || !this.graph.has(target) ) throw new Error(`Start node ${start} or target node ${target} not part of graph!`);
         this.open.add(start);
