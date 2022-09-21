@@ -2,7 +2,6 @@
   "name": "cs-algorithms",
   "version": "0.0.3",
   "description": "Various sorting and graph algorithms.",
-  "type": "module",
   "exports": {
     ".": "./out/src/**/*.js",
     "./graphs": "./out/src/graph_*/*.js",

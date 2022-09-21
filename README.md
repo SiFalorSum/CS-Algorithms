@@ -27,7 +27,7 @@ This package is built with _Typescript_ to be used in a _Node.Js_ environment. M
 
 ### Imports
 
-The following package entry points are available for ES module imports:
+The following package entry points are available for imports:
 ```
 "cs-algorithms"         // General entry point
 "cs-algorithms/graphs"  // Graph algorithms
