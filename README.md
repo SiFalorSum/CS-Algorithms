@@ -25,6 +25,11 @@ This package is built with _Typescript_ to be used in a _Node.Js_ environment. M
 - Run `npm run test` to run unit tests only.
 - Run `npm run demo` to see the algorithms in action using example data.
 
----
+### Imports
 
-TODO: Exports, main/index etc.
+The following package entry points are available for ES module imports:
+```
+"cs-algorithms"         // General entry point
+"cs-algorithms/graphs"  // Graph algorithms
+"cs-algorithms/sorting" // Sorting algorithms
+```
