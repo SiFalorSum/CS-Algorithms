@@ -18,17 +18,22 @@ export interface Node {
 }
 
 /**
+ * Defines an edge between two nodes as a pair of their ID's: `[node1.getId(): string, node2.getId(): string]`
+ */
+export type Edge = [string, string];
+
+/**
  * An object holding a collection of {@link Node|nodes} and the edges connecting them. The graph is defined as an _undirected, simple graph_ and may contain unlinked nodes,
  * but not multiple edges between the same two nodes, nor looping edges back to the same node.
  * @constructor
  * @param {Iterable<T extends Node>} nodes - An iterable containing node objects. Duplicates will be ignored.
- * @param {Iterable<[string, string]>} edges - An iterable containing _unordered pairs_ of node identifiers [_a,b_], where _a_ &ne; _b_, [_a,b_] &equiv; [_b,a_] and [_a,b_] &sube; `nodes`.
+ * @param {Iterable<Edge>} edges - An iterable containing _unordered pairs_ of node identifiers [_a,b_], where _a_ &ne; _b_, [_a,b_] &equiv; [_b,a_] and [_a,b_] &sube; `nodes`.
  */
 export class Graph<T extends Node> {
     protected adjacencyList = new Map<string, Set<string>>();
     protected nodeList = new Map<string, T>();
 
-    constructor(nodes?: Iterable<T>, edges?: Iterable<[string, string]>) {
+    constructor(nodes?: Iterable<T>, edges?: Iterable<Edge>) {
         if ( nodes !== undefined ) {
             this.addNodes(nodes);
             if ( edges !== undefined ) {
@@ -78,7 +83,7 @@ export class Graph<T extends Node> {
         }
     }
 
-    addEdges(edges: Iterable<[string, string]>) {
+    addEdges(edges: Iterable<Edge>) {
         for ( const edge of edges ) {
             this.addEdge(...edge);
         }
