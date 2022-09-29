@@ -1,13 +1,13 @@
 /**
  * Test and Demo utilities for {@link Graph|graph} traversal.
  */
-import { Graph, Edge } from '../graph_traversal/graph';
-import { Airport } from '../graph_demo/airport';
-import { loadFile, parseJSONtoType } from '../util/common_util';
-import type { Node } from '../graph_traversal/graph'
+import { Graph, Edge } from 'graph/graph'
+import { Airport } from 'graph/demo/airport';
+import { loadFile, parseJSONtoType } from 'util/common_util';
+import type { Node } from 'graph/graph'
 
-const AIRPORTS_PATH = '../../../data/example_airports.JSON';
-const ROUTES_PATH = '../../../data/example_routes.JSON';
+const AIRPORTS_PATH = 'data/example_airports.JSON';
+const ROUTES_PATH = 'data/example_routes.JSON';
 
 /**
  * Interface for example data from file, to be used for constructing {@link Airport|airport} {@link Node|nodes}. 
@@ -106,4 +106,17 @@ export async function demoGraph(): Promise<Graph<Airport>> {
             reject(err);
         }
     });
+}
+
+/**
+ * Prints out items of the example Airport class as a table.
+ * @param airports Array of {@link Airport} objects.
+ * @returns A multiline string with formatted airport data.
+ */
+export function airportPrinter(airports: Airport[]): string {
+    let out = "";
+    airports.forEach(apt => {
+        out += `${apt.code}: ${apt.name.padEnd(32)} (${apt.country.padEnd(22)}) - lat: ${apt.lat.value.toFixed(2)}, long: ${apt.long.value.toFixed(2)}\n`;
+    });
+    return out;
 }

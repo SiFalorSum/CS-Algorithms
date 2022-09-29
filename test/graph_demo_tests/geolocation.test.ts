@@ -1,5 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import { GeoLocation } from '../../src/graph_demo/geolocation';
+import { GeoLocation } from 'graph/demo/geolocation';
 
 describe("GeoLocation tests", () => {
     const pt1 = new GeoLocation(55.617777777777775, 12.655833333333334); // Copenhagen

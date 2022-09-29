@@ -1,11 +1,11 @@
-import { Astar } from '../graph_traversal/astar';
-import { demoGraph } from '../util/graph_util';
+import { Astar } from 'graph/astar';
+import { demoGraph, airportPrinter } from 'util/graph_util';
 
 
 async function aStarDemo() {
     try {
         const astar = new Astar(await demoGraph());
-        console.log(astar.findPath("MAN", "FCO"));
+        console.log(airportPrinter(astar.findPath("MAN", "FCO")));
     }
     catch (err) {
         console.error(err);

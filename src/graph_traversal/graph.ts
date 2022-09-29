@@ -104,7 +104,7 @@ export class Graph<T extends Node> {
         this.adjacencyList.get(nodeId2)!.delete(nodeId1);
     }
 
-    private checkIfInGraph(nodeId: string) {
+    protected checkIfInGraph(nodeId: string) {
         if ( !this.nodeList.has(nodeId) ) throw new Error(`No node with id ${nodeId} in graph!`);
     }
 

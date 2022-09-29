@@ -37,6 +37,15 @@
       "<rootDir>/src/",
       "<rootDir>/test/"
     ],
+    "moduleNameMapper": {
+      "^data/(.*)$": "<rootDir>/data/$1",
+      "^util/(.*)$": "<rootDir>/src/util/$1",
+      "^sort/demo/(.*)$": "<rootDir>/src/sort_demo/$1",
+      "^sort/(.*)$": "<rootDir>/src/sort/$1",
+      "^graph/demo/(.*)$": "<rootDir>/src/graph_demo/$1",
+      "^graph/(.*)$": "<rootDir>/src/graph_traversal/$1"
+    },
+    "moduleDirectories": ["node_modules", "src"],
     "verbose": true
   },
   "private": true
