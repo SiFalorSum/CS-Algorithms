@@ -1,4 +1,7 @@
-import { describe, expect, test } from '@jest/globals';
-import { bfs, dfs } from '../../src/graph_traversal/graphsearch';
+import { describe, expect, test, beforeAll } from '@jest/globals';
+import { bfs, dfs } from 'graph/graphsearch';
 
-// TODO
+describe("Tests of 'depth first' and 'breadth first' graph search", () => {
+    beforeAll(() => {});
+    test("", () => {});
+});

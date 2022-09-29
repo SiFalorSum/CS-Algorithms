@@ -1,4 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
-import { Astar } from '../../src/graph_traversal/astar';
+import { Astar } from 'graph/astar';
 
-// TODO
+describe("", () => {
+    test("", () => {});
+});
