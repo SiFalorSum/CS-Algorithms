@@ -1,7 +1,16 @@
 {
     "extends" : "./node_modules/@tsconfig/recommended/tsconfig",
     "compilerOptions": {
-        "outDir": "out"
+        "outDir": "out",
+        "baseUrl": "./",
+        "paths": {
+            "data/*": ["data/*"],
+            "util/*": ["src/util/*"],
+            "sort/*": ["src/sort/*"],
+            "sort/demo/*": ["src/sort_demo/*"],
+            "graph/*": ["src/graph_traversal/*"],
+            "graph/demo/*": ["src/graph_demo/*"]
+        }
     },
     "include" : ["src/**/*", "test/**/*"],
     "exclude": ["node_modules", "**/*.spec.ts"]

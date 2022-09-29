@@ -1,0 +1,15 @@
+{
+    "plugins": [
+        ["module-resolver", {
+            "root": ["./", "./out/"],
+            "alias": {
+                "data": ["./data"],
+                "util": ["./src/util"],
+                "sort": ["./src/sort"],
+                "sort/demo": ["./src/sort_demo"],
+                "graph": ["./src/graph_traversal"],
+                "graph/demo": ["./src/graph_demo"]
+            }
+        }]
+    ]
+}
