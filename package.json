@@ -1,6 +1,6 @@
 {
   "name": "cs-algorithms",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Various sorting and graph algorithms.",
   "exports": {
     ".": "./out/src/**/*.js",
